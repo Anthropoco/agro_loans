@@ -74,14 +74,14 @@
 						$sql = "SELECT id, name FROM countries";
 						$result = $conn->query($sql);
 
+						$countries = "<option value=\"\">--</option>";
+
 						if ($result->num_rows > 0) {
 						 	
 						 	while ($row = $result->fetch_assoc()) {
 						 		$countries .= "<option value=".$row['id'] .">". $row['name'] ."</option>\n";
 						 	}
 						 	echo $countries;
-						 } else {
-						 	echo "<option value=\"\">error cant fetch kwontries</option>";
 						 }
 						
 						?>
@@ -92,14 +92,14 @@
 						$sql = "SELECT id, name FROM states";
 						$result = $conn->query($sql);
 
+						$states = "<option value=\"\">--</option>";
+
 						if ($result->num_rows > 0) {
 						 	
 						 	while ($row = $result->fetch_assoc()) {
 						 		$states .= "<option value=".$row['id'] .">". $row['name'] ."</option>\n";
 						 	}
 						 	echo $states;
-						 } else {
-						 	echo "<option value=\"\">error cant fetch states</option>";
 						 }
 						
 						?>
@@ -110,14 +110,14 @@
 						$sql = "SELECT id, state_id, name FROM local_governments";
 						$result = $conn->query($sql);
 
+						$local_governments = "<option value=\"\">--</option>";
+
 						if ($result->num_rows > 0) {
 						 	
 						 	while ($row = $result->fetch_assoc()) {
-						 		$lgas .= "<option value=".$row['id'] ." data-state_id=". $row['state_id'] .">". $row['name'] ."</option>\n";
+						 		$local_governments .= "<option value=".$row['id'] ." data-state_id=". $row['state_id'] .">". $row['name'] ."</option>\n";
 						 	}
-						 	echo $lgas;
-						 } else {
-						 	echo "<option value=\"\">error cant fetch local governments</option>";
+						 	echo $local_governments;
 						 }
 						
 						?>
@@ -160,15 +160,15 @@
 					<label for="nok_city">City</label><input type="text" id="nok_city" name="nok_city" />
 					<label for="nok_country">Country</label>
 					<select id="nok_country" name="nok_country">
-						<option value="">kwontries</option>
+						<?php echo $countries ?>
 					</select>
 					<label for="nok_state">State</label>
 					<select id="nok_state" name="nok_state">
-						<option value="">relevant states list</option>
+						<?php echo $states ?>
 					</select>
 					<label for="nok_lga">LGA</label>
 					<select id="nok_lga" name="nok_lga">
-						<option value="">relevant LGAs for the selected state.</option>
+						<?php echo $local_governments ?>
 					</select>
 					<label for="nok_phone_no">Phone No</label><input type="text" id="nok_phone_no" name="nok_phone_no" />
 					<label for="nok_email">Email address</label><input type="email" id="nok_email" name="nok_email" />
