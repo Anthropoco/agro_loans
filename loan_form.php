@@ -127,11 +127,11 @@
 						<option value="pvc">Permanent Voters' Card</option>
 						<option value="national_id">National ID</option>
 					</select><br />
-					<label for="issue_date">Issue Date</label><input type="date" id="issue_date" name="issue_date" /><br />
-					<label for="expiry_date">Expiry Date</label><input type="date" id="expiry_date" name="expiry_date" /><br />
-					<label for="expiry_date">Expiry Date</label><input type="date" id="expiry_date" name="expiry_date" /><br />
+					<label for="issue_date">Issue Date</label><input type="date" placeholder="mm/dd/yyyy" placeholder="mm/dd/yyyy" placeholder="mm/dd/yyyy" id="issue_date" name="issue_date" /><br />
+					<label for="expiry_date">Expiry Date</label><input type="date" placeholder="mm/dd/yyyy" placeholder="mm/dd/yyyy" id="expiry_date" name="expiry_date" /><br />
+					<label for="expiry_date">Expiry Date</label><input type="date" placeholder="mm/dd/yyyy" id="expiry_date" name="expiry_date" /><br />
 					<label for="utility_bill_no">Utility Bills (NEPA or water board) Account No</label><input type="text" id="utility_bill_no" name="utility_bill_no" /><br />
-					<label for="utility_bill_date">Issue Date</label><input type="date" id="utility_bill_date" name="utility_bill_date" /><br />
+					<label for="utility_bill_date">Issue Date</label><input type="date" placeholder="mm/dd/yyyy" id="utility_bill_date" name="utility_bill_date" /><br />
 
 
 				</fieldset>
