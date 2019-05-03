@@ -180,5 +180,8 @@
 		</section>
 		<footer>(c) Pocosoft technologies 2019</footer>
 	</body>
+
+	<script src="scripts/main.js"></script>
+	
 </html>
 <?php  }  ?>

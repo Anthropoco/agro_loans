@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="styles.css"	 />
+		<link rel="stylesheet" type="text/css" href="styles/main.css"	 />
 		<title>Agro Loans</title>
 
 	</head>
@@ -19,4 +19,7 @@
 		</section>
 		<footer>(c) Pocosoft technologies 2019</footer>
 	</body>
+
+	<script src="scripts/main.js"></script>
+
 </html>
