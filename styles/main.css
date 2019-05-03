@@ -15,6 +15,14 @@ body{
 	border: solid darkgreen 1px;
 }
 
+header{
+	margin-bottom: 20px;
+}
+
+.site_tagline{
+	font-family: brushscript, helvetica, courier, serif;
+}
+
 form{
 	box-sizing: content-box;
 	line-height: 1.8;
