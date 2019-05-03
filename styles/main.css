@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	background: rgb(150, 150, 150);
+	padding: 10px;
+}
+
+body{
+	max-width: 800px;
+	margin: auto;
+	padding: 10px;
+	border: solid darkgreen 1px;
+}
+
+form{
+	box-sizing: content-box;
+	line-height: 1.5;
+}
+
+fieldset{
+	/*display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap:10px;*/
+	padding: 20px;
+}
+
+label{
+	/*grid-column: 1/2;*/
+	display: inline-block;
+	width: 40%;
+	text-align: right;
+	margin-right: 20px;
+}
+
+input, select{
+	/*grid-column: 2/3;*/
+	width: 50%;
+	height: 2em;
+	vertical-align: top;
+}
+
+input[type=submit]{
+	margin-left: 25%;
+}
+
+//for mobile
+@media screen and (max-width: 600px){
+	label, input, select{
+		/*grid-column: 1/2;*/
+		display: block;
+		width: 100%;
+	}
+
+
+}
