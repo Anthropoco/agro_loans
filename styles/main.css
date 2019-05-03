@@ -60,6 +60,7 @@ input, select{
 	vertical-align: top;
 	border: solid darkgreen 1px;
 	border-radius: 1em;
+	padding-left: 1em;
 }
 
 input:hover, input:focus, select:hover, select:focus{
