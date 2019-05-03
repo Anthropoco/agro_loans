@@ -173,10 +173,10 @@
 
 				<input type="submit" value="Submit" id="submit" name="submit" />
 			</form>
-			<div class="form_pages_nav">
+<!-- 			<div class="form_pages_nav">
 					<button class="prev">previous page</button>
 					<button class="next">next page</button>
-				</div>
+				</div> -->
 		</section>
 		<footer>(c) Pocosoft technologies 2019</footer>
 	</body>
