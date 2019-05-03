@@ -5,7 +5,6 @@
 }
 
 html{
-	background: rgb(150, 150, 150);
 	padding: 10px;
 }
 
@@ -18,7 +17,7 @@ body{
 
 form{
 	box-sizing: content-box;
-	line-height: 1.5;
+	line-height: 1.8;
 }
 
 fieldset{
@@ -41,6 +40,11 @@ input, select{
 	width: 50%;
 	height: 2em;
 	vertical-align: top;
+	border: solid darkgreen 1px;
+}
+
+input:hover, input:focus, select:hover, select:focus{
+	background: lightgreen;
 }
 
 input[type=submit]{
