@@ -22,7 +22,7 @@
 	<section class="content">
 		<p>we are an agro extension firm. We are approved with the Bank of Agriculture to give low interest loans and other aids to farmers.</p>
 		<h2>need a <span class="emphasis">loan?</span></h2>
-		<a href="loan_form.php">Apply Now!</a>
+		<a href="loan_form.php" class="btn button-primary">Apply Now!</a>
 	</section>
 	<footer>(c) Pocosoft technologies 2019</footer>
 
